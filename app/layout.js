@@ -1,5 +1,6 @@
 import { Sora, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import ThemeProvider from "@/components/ThemeProvider";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -66,7 +67,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${sora.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${sora.variable} ${inter.variable} ${jetbrainsMono.variable} dark`}>
       <body>
         <a
           href="#main-content"
@@ -74,7 +75,9 @@ export default function RootLayout({ children }) {
         >
           Skip to content
         </a>
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -43,9 +43,9 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center px-6 pt-32 pb-20 lg:px-12"
+      className="relative flex min-h-screen flex-col justify-center px-4 pt-24 pb-12 sm:px-6 lg:px-8 lg:pt-20 lg:pb-12"
     >
-      <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-16 lg:grid-cols-[1.15fr_0.85fr]">
+      <div className="mx-auto grid w-full max-w-[1360px] grid-cols-1 items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
         <div>
           <motion.p
             initial={{ opacity: 0, y: 12 }}

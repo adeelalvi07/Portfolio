@@ -3,8 +3,8 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/5 px-6 py-10 lg:px-12">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 sm:flex-row">
+    <footer className="relative border-t border-white/5 px-4 py-10 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-[1360px] flex-col items-center justify-between gap-6 sm:flex-row">
         <p className="text-center text-xs text-white/40 sm:text-left">
           © {new Date().getFullYear()} {profile.name}. Built with Next.js,
           React and modern web technologies.

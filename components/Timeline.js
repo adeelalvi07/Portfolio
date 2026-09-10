@@ -5,8 +5,8 @@ import { timeline } from "@/lib/data";
 
 export default function Timeline() {
   return (
-    <section className="relative px-6 py-20 lg:px-12" aria-labelledby="timeline-heading">
-      <div className="mx-auto max-w-4xl">
+    <section className="relative px-4 py-20 sm:px-6 lg:px-8" aria-labelledby="timeline-heading">
+      <div className="mx-auto max-w-[1360px]">
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}

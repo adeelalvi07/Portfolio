@@ -33,8 +33,8 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="relative px-6 py-28 lg:px-12">
-      <div className="mx-auto max-w-6xl">
+    <section id="contact" className="relative px-4 py-24 sm:px-6 lg:px-8 lg:py-28">
+      <div className="mx-auto max-w-[1360px]">
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
